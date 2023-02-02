@@ -9,16 +9,17 @@ interface Props {
   
   const Card = ({ imageSrc, header, description }: Props) => {
     return (
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="flex justify-center items-center p-4 flex-col">
         <Image 
             src={imageSrc} 
             alt={header} 
-            width="150"
+            width="500"
             height="100"
-            className="w-full h-56 object-cover"
         />
-        <h2>{header}</h2>
-        <p>{description}</p>
+        <div className="p-8">
+            <h2 className="text-xl font-bold mb-2">{header}</h2>
+            <p className="text-gray-700 text-base">{description}</p>
+        </div>
       </div>
     );
   };

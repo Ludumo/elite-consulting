@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
       <footer>
-        &copy; Nkosiza 2022
+        &copy; Elite Consulting 2023
       </footer>
     );
   };

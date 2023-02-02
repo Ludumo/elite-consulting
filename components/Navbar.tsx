@@ -10,7 +10,7 @@ const Navbar = () => {
             className='flex container' 
             width={180}
             height={180}    
-            src="/elite-logo.png"
+            src="https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/elite-logo.jpg"
             alt="Logo" 
         />
       </Link>
