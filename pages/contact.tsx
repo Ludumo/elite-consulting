@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Hero from '../components/Hero';
 import Link from 'next/link';
+import Footer from '../components/Footer';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -20,13 +21,15 @@ const Contact = () => {
   return (
     <div>
       <Hero 
-      backgroundImage={'https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/cape-flats-1256x942.jpg'} 
-      header={'CONTACT US'} 
-      message={'Send Us an email'} 
+      backgroundImage={'https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/Schools+original+pics/Elite-Pics/IMG_6161.JPG'} 
+      header={''} 
+      message={''} 
       buttonText={'Enter'} 
-      showButton={true} 
+      showButton={false} 
       buttonLink={'https://ludumo@eliteconsulting.co.za'}
+      height='80'
     />
+     <h2 className='flex text-xl justify-center'>CONTACT US</h2>
     <form className='max-w-[600px] m-auto p-10' 
     onSubmit={handleSubmit}>
       <div  className='grid grid-cols-4 gap-2'>
@@ -59,6 +62,7 @@ const Contact = () => {
             type="submit">Submit
       </button>
     </form>
+    <Footer />
   </div>
   );
 };

@@ -1,27 +1,31 @@
 import Hero from '../components/Hero'
+import Footer from '../components/Footer'
 
 function about() {
   return (
     <div>
-        <Hero backgroundImage={'https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/cape-flats-1256x942.jpg'} 
-              header={'ABOUT US'} 
-              message={'Putting the peoples needs first!'} 
+        <Hero backgroundImage={'https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/Klipfontein+Corridor.jpg'} 
+              header={''} 
+              message={''} 
               buttonText={''} 
               showButton={false}
+              height="80"
         />
-          <p className='flex justify-center text-l pb-10 pt-12 mx-auto  font-light text-center'>
-            Elite Consulting, established in 2007, offers a hands-on, 
-            holistic approach to the built and engineering environment, 
-            combining expertise in facilitation, organization development, 
-            management consulting, building and material supply, as well as property development. 
-            We have extensive experience in conducting public participation processes, 
-            surveying needs and perceptions, 
-            and facilitating strategic management workshops while imparting skills to participants. 
-            With nearly two decades of experience, 
-            We have helped emerging entrepreneurs enhance their local economic participation 
-            in the construction and infrastructure development industry. 
-            Our unique approach to partnering with clients offers intrinsic value to their human resource development plans. 
+        <h2 className='flex text-xl justify-center'>ABOUT US</h2>
+          <p className='flex justify-center text-l p-10 mx-auto  font-light text-center'>
+            Elite Consulting, founded in 2007, offers a comprehensive and hands-on approach
+             to the built and engineering environment, combining expertise in facilitation, 
+             organization development, management consulting, building and material supply,
+              as well as property development. With nearly two decades of experience, 
+              we bring extensive knowledge to the table, having helped entrepreneurs 
+              improve their local economic participation in the construction and infrastructure development industry.
+               Our approach includes conducting public participation processes, 
+               surveying needs and perceptions, and facilitating strategic management
+                workshops while imparting essential skills to participants. 
+                Our unique partnership approach provides intrinsic value to clients' 
+                human resource development plans.
           </p>
+          <Footer />
       </div>
   )
 }

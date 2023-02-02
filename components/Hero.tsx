@@ -7,19 +7,20 @@ interface Props {
   buttonText: string;
   buttonLink?: string;
   showButton: boolean;
+  height?: string;
 }
 
-const Hero = ({ backgroundImage, header, message,showButton, buttonText, buttonLink = '/' }: Props) => {
+const Hero = ({ backgroundImage, header, message,showButton, buttonText, buttonLink = '/', height = '80' }: Props) => {
   return (
     <div
-      className="bg-cover bg-center h-screen flex flex-col items-center justify-center"
+      className={`bg-cover  h-${height} bg-top flex flex-col items-center justify-center`}
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <h1 className="text-3xl font-bold text-white">{header}</h1>
+      <h1 className="text-3xl p-24 font-sans italic text-white">{header}</h1>
       <p className="text-xl text-white">{message}</p>
       {showButton && (
       <Link href={buttonLink}>
-        <div className="bg-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded">
+        <div className='px-8 text-white py-2 border'>
           {buttonText}
         </div>
       </Link>
