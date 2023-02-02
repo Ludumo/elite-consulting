@@ -9,7 +9,9 @@ export default function Home() {
             header={"ELITE CONSULTING"} 
             message={"Facilitating Social Inclusion in the building and engineering environment"} 
             buttonLink="/about"
-            buttonText={"Enter"} />
+            buttonText={"Enter"}
+            showButton={true}
+             />
       <Footer />
     </div>
   )
