@@ -6,8 +6,8 @@ import Footer from "../components/Footer";
 function Projects() {
   return (
     <>
-        <Hero backgroundImage={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/Langa-street-art-Photo-credit-Tayla-Gentle-17.jpg"} header={""} message={""} buttonText={""} showButton={false} backgroundPosition={""} />
-    <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3 p-32 ">
+        <Hero backgroundImage={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/Langa-street-art-Photo-credit-Tayla-Gentle-17.jpg"} header={"OUR PROJECTS"} message={""} buttonText={""} showButton={false} backgroundPosition={""} />
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3 p-32 ">
         <ProjectCard 
             imageSrc={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/Langa-street-art-Photo-credit-Tayla-Gentle-17.jpg"}
             header={"Langa Spatial Open Spaces"} 
@@ -15,22 +15,22 @@ function Projects() {
             />
         <ProjectCard 
             imageSrc={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/portia-primary-school.jpg"}
-            header={"ASIDI (Accelerated Schools Infrastructural Development Initiative)"} 
+            header={"ASIDI - Accelerated Schools Infrastructural Development Initiative - 2013"} 
             description={""} 
             />
         <ProjectCard 
             imageSrc={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/philipi-aerial.png"}
-            header={"Nolungile and Phillipi Station Modernisation by PRASA"} 
+            header={"Nolungile and Phillipi Station Modernisation by PRASA - 2013"} 
             description={""} 
             />
         <ProjectCard 
             imageSrc={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/Langa+Station.png"}
-            header={"Langa Station Public Urban Spaces Development"} 
+            header={"Langa Station Public Urban Spaces Development - 2012"} 
             description={""} 
             />
         <ProjectCard 
             imageSrc={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/Khayelitsha+Serivce+Centre.jpg"}
-            header={"Khayelitsha Shared Services Office Building construction 2010"} 
+            header={"Khayelitsha Shared Services Office Building construction - 2010"} 
             description={""} 
             />
         <ProjectCard 
@@ -60,12 +60,12 @@ function Projects() {
             />
         <ProjectCard 
             imageSrc={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/800px-Khayelitsha_Lookout-Hill_Ilitha-Park.jpg"}
-            header={"Greenpoint Phase Two Housing Development (Informal Settlement in Khayelitsha)"} 
+            header={"Greenpoint Phase Two Housing Development - Informal Settlement in Khayelitsha"} 
             description={""} 
             />
         <ProjectCard 
             imageSrc={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/District+Six.jpg"}
-            header={"Facilitation of Spatial Development Framework and Business Plan for District Six (mixed use land restitution)"} 
+            header={"Facilitation of Spatial Development Framework and Business Plan for District Six - mixed use land restitution"} 
             description={""} 
             />
         <ProjectCard 
@@ -90,7 +90,7 @@ function Projects() {
             />
         <ProjectCard 
             imageSrc={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/Phillipi.jpg"}
-            header={"Green point housing phase 2; Transnet Housing; Philippi, Nuwe Begin Provincial Housing Development"} 
+            header={"Green point housing phase 2 - Transnet Housing Philippi "} 
             description={""} 
             />
         <ProjectCard 

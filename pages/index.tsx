@@ -15,8 +15,12 @@ export default function Home() {
             backgroundPosition='center' 
           /> 
              <br/>
-             <p className="flex justify-center text-xl p-12 mx-auto  font-light text-center">Improving the quality of life for all residents through
-               the joint creation of secure and environmentally friendly communities.
+             <p className="flex justify-center text-xl p-12 mx-auto  font-light text-center">
+             The phrase "Improving the quality of life for all residents through the joint creation of secure and environmentally friendly communities"
+              highlights the importance of creating communities that prioritize both the safety and well-being of its residents, as well as the preservation
+               and protection of the environment. In today's society, it is increasingly recognized that a community's success is not just measured by its 
+               economic growth, but also by the quality of life of its residents. 
+               
             </p>
       <Footer />
     </div>

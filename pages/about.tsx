@@ -6,7 +6,7 @@ function about() {
   return (
     <div>
         <Hero backgroundImage={'https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/Klipfontein+Corridor.jpg'} 
-              header={''} 
+              header={'OUR VALUES'} 
               message={''} 
               buttonText={''} 
               showButton={false}
