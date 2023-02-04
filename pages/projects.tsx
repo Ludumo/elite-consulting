@@ -6,8 +6,8 @@ import Footer from "../components/Footer";
 function Projects() {
   return (
     <>
-        <Hero backgroundImage={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/Langa-street-art-Photo-credit-Tayla-Gentle-17.jpg"} header={""} message={""} buttonText={""} showButton={false} />
-    <div className="grid grid-cols-3 flex-wrap ">
+        <Hero backgroundImage={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/Langa-street-art-Photo-credit-Tayla-Gentle-17.jpg"} header={""} message={""} buttonText={""} showButton={false} backgroundPosition={""} />
+    <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3 p-32 ">
         <ProjectCard 
             imageSrc={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/Langa-street-art-Photo-credit-Tayla-Gentle-17.jpg"}
             header={"Langa Spatial Open Spaces"} 

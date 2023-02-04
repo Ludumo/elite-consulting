@@ -2,34 +2,87 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-400 text-white py-8">
-      <div className="container mx-auto">
-        <div className="text-center">
-          <p className="text-xs">&copy; Elite Consulting 2023</p>
-        </div>
-        <div className="flex flex-wrap justify-center mt-10">
-          <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <h3 className="font-medium text-lg mb-3">Contact Us</h3>
-            <p className="mb-3">
-              Email: info@eliteconsulting.com <br />
-              Phone: (123) 456-7890
-            </p>
-          </div>
-          <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <h3 className="font-medium text-lg mb-3">Quick Links</h3>
-            <ul className="list-none">
-              <li className="mb-2"><a href="#" className="text-white hover:text-gray-400">Home</a></li>
-              <li className="mb-2"><a href="#" className="text-white hover:text-gray-400">Services</a></li>
-              <li className="mb-2"><a href="#" className="text-white hover:text-gray-400">About Us</a></li>
-              <li className="mb-2"><a href="#" className="text-white hover:text-gray-400">Contact Us</a></li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/3 px-3">
-            <p className="mb-3">Improving the quality of life for all residents through the joint creation of secure and environmentally friendly communities.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+        <footer className="bg-white dark:bg-gray-800 pt-4 pb-8 xl:pt-8">
+            <div className="max-w-screen-lg px-4 mx-auto text-gray-400 xl:max-w-screen-xl sm:px-6 md:px-8 dark:text-gray-300">
+                <ul className="flex flex-wrap justify-center pb-8 text-lg font-light">
+                    <li className="w-1/2 md:w-1/3 lg:w-1/3">
+                        <div className="text-center">
+                            <h2 className="text-gray-500 dark:text-gray-200 text-md text-3xl mb-4">
+                                Improving the quality of life for all residents throughthe joint creation of secure and environmental
+                            </h2>
+                          
+                        </div>
+                    </li>
+                    <li className="w-1/2 md:w-1/3 lg:w-1/3">
+                        <div className="text-center">
+                            <h2 className="text-gray-500 dark:text-gray-200 text-md uppercase mb-4">
+                                Contacts
+                            </h2>
+                            <ul>
+                                <li className="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                    <a href="#">
+                                        info@eliteconsulting.co.za
+                                    </a>
+                                </li>
+                                <li className="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                    <a href="#">
+                                        31 Mentz crescent 
+                                    </a>
+                                </li>
+                                <li className="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                    <a href="#">
+                                    Panorama 
+                                    </a>
+                                </li>
+                                <li className="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                    <a href="#">
+                                    Cape Town
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li className="w-1/2 md:w-1/3 lg:w-1/3">
+                        <div className="text-center">
+                            <h2 className="text-gray-500 dark:text-gray-200 text-md uppercase mb-4">
+                                Quick links
+                            </h2>
+                            <ul>
+                                <li className="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                    <a href="#">
+                                    Home
+                                    </a>
+                                </li>
+                                <li className="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                    <a href="#">
+                                    About
+                                    </a>
+                                </li>
+                                <li className="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                                    <a href="#">
+                                    Projects
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div className="pt-8 flex border-t border-gray-200 max-w-xs mx-auto items-center justify-evenly">
+                    <a href="#">
+                        <svg width="20" height="20" fill="currentColor" className="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="20" height="20" fill="currentColor" className="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
   );
 };
 
