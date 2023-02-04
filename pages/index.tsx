@@ -7,8 +7,8 @@ export default function Home() {
     <div>
       <Hero 
             backgroundImage={"https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/cape-flats2.png"}
-            header={"Improving the quality of life for all residents throughthe joint creation of secure and environmentally friendly communities."}
-            message={""}
+            header={""}
+            message={"Improving the quality of life for all residents throughthe joint creation of secure and environmentally friendly communities."}
             buttonLink="/about"
             buttonText={"Enter"}
             showButton={true}

@@ -4,10 +4,9 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Image from 'next/image';
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className='max-w-[1240px] m-auto flex justify-between items-center  text-black'>
+    <div className='max-w-[1240px] m-auto flex justify-between items-center text-black'>
       <Link href="/">
         <Image
             className='flex container' 
@@ -41,7 +40,7 @@ const Navbar = () => {
                 </li>
             </ul>
         </div>
-    </nav>
+    </div>
   );
 };
 
