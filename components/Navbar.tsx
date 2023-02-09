@@ -1,45 +1,101 @@
-import React , { useState, useEffect }  from 'react'
 import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Image from 'next/image';
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const [color, setColor] = useState('transparent');
+  const [textColor, setTextColor] = useState('white');
+  const [logo, setLogo] = useState(
+    "https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/elite-logo.jpg"
+  );
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor('#ffff');
+        setTextColor('#083b27');
+        setLogo(
+          "https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/elite-logo.jpg"
+        );
+      } else {
+        setColor('#ffff');
+        setTextColor('#083b27');
+        setLogo(
+          "https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/elite-logo.jpg"
+        );
+      }
+    };
+    window.addEventListener('scroll', changeColor);
+  }, []);
 
   return (
-    <div className='max-w-[1240px] m-auto flex justify-between items-center text-black'>
-      <Link href="/">
-        <Image
-            className='flex container' 
-            width={180}
-            height={180}    
-            src="https://ludumobucket.s3.eu-central-1.amazonaws.com/EC-Web+images/elite-logo.jpg"
-            alt="Logo" 
+    <div
+      style={{ backgroundColor: `${color}` }}
+      className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
+    >
+      <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white/20'>
+        <Link href='/' className='flex items-center'>
+        <Image 
+              className='flex container' 
+              src={logo} 
+              alt='Logo'
+              width={115}
+              height={80} 
         />
-      </Link>
-        <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200 ">
-            <ul className="flex flex-wrap -mb-px">
-                <li className="mr-2">
-                    <a href="/" className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">
-                        Home
-                    </a>
-                </li>
-                <li className="mr-2">
-                    <a href="/about" className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">
-                        About
-                    </a>
-                </li>
-                <li className="mr-2">
-                    <a href="/projects" className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">
-                        Projects
-                    </a>
-                </li>
-                <li className="mr-2">
-                    <a href="/contact" className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+        </Link>
+        <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
+          <li className='p-4'>
+            <Link href='/#'>Home</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/about'>About</Link>
+            </li>
+          <li className='p-4'>
+            <Link href='/projects'>Projects</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/contact'>Contact</Link>
+          </li>
+        </ul>
+        
+        {/* Mobile Button */}
+        <div onClick={handleNav} className='block sm:hidden z-10'>
+          {nav ? (
+            <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
+          ) : (
+            <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
+          )}
         </div>
+        {/* Mobile Menu */}
+        <div
+          className={
+            nav
+              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+          }
+        >
+          <ul>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='/#'>Home</Link>
+            </li>
+            <li onClick={handleNav} className='relative p-4 text-4xl hover:text-gray-500'>
+              <Link href='/about'>About</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='/projects'>Projects</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='/contact'>Contact</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

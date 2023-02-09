@@ -9,7 +9,9 @@ interface Props {
   
   const Card = ({ imageSrc, header, description }: Props) => {
     return (
-      <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
+      <div className="flex-autox">
+
+      <div className="items-center m-auto overflow-hidden p-2 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
         <a href="/" className="block w-full h-full">
         <Image 
             src={imageSrc} 
@@ -17,13 +19,14 @@ interface Props {
             width="500"
             height="100"
             className="object-cover w-full max-h-40"
-        />
+            />
         <div className="w-full p-4 bg-white dark:bg-gray-500">
             <h2 className="font-medium text-white text-md">{header}</h2>
             <p className="mb-2 text-xl font-medium text-gray-800 dark:text-white">{description}</p>
         </div>
         </a>
       </div>
+            </div>
     );
   };
   
