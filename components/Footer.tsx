@@ -19,17 +19,17 @@ const Footer = () => {
                                 </li>
                                 <li className="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                                     
-                                        31 Mentz crescent 
+                                        
                                 
                                 </li>
                                 <li className="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                                     
-                                    Panorama 
+                                    
                                     
                                 </li>
                                 <li className="mb-4 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
                                   
-                                    Cape Town
+                                   
                                     
                                 </li>
                             </ul>
